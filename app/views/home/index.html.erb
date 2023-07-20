@@ -1,1 +1,9 @@
-<h1>Hello Mayuresh!</h1>
+<h1>Hello User!!</h1>
+<%= form_tag destroy_user_session_path, method: :delete do %>
+  <%= submit_tag "Sign Out" %>
+<% end %>
+<br />
+<%= form_tag new_user_registration_path, method: :get do %>
+  <%= submit_tag "Sign Up" %>
+<% end %>
+
